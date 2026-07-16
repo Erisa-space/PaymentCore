@@ -1,6 +1,6 @@
-FROM node:21.1.0
+FROM node:22-alpine
 ENV TZ="Europe/Moscow"
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package.json ./
 COPY yarn.lock ./
